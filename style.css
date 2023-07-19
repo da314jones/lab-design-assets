@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #6C63FF;
+    --secondary-color: #A593E0;
+    --accent-color: #F1E9FF;
+  }
+  
+body, html {
+    height: 100vh;
+    margin: 5px 5px 0;
+    padding: 5px 5px 0;
+}
+
+body {
+    overflow: auto;
+}
+
+  .parent {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    background-image: url("./assets/backgound-folio.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+  
+  .div1 {
+    grid-area: 1 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: purple;
+    margin-right: 50%;
+    height: 825px;
+    border: 10px solid rgb(226, 73, 226);
+    border-top-right-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    /* transform-origin: top left;
+    transform: rotate(-37deg); */
+      }
+  
+.div1 {
+    /* transform-origin: center;
+    transform: rotate(-45deg); */
+}
+
+  .hi-im {
+    color: gold;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 2em;
+    animation: slideFromRight 3s forwards, shimmer 2s infinite linear;
+  }
+  
+  .welcome {
+    font-size: 1em;
+    color: gold;
+    text-align: center;
+    animation: fadeIn 1s forwards, shimmer 2s infinite linear;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    background-size: 200% 100%;
+  }
+  
+  .name {
+    color: gold;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1em;
+    animation: slideFromRightFast 3s forwards, shimmer 2s infinite linear;
+  }
+  
+  button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: var(--primary-color);
+    transform: scale(0.95);
+  }
+  
+  @keyframes scaleAndFadeIn {
+    0% {
+      font-size: 1em;
+      opacity: 0;
+    }
+    70% {
+      font-size: 6em;
+      opacity: 1;
+    }
+    100% {
+      font-size: 6em;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideFromRightAndGrowName {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+      font-size: 1em;
+    }
+    70% {
+      transform: translateX(0);
+      opacity: 1;
+      font-size: 1em;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+      font-size: 3em;
+    }
+  }
+  
+
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -100%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  
+  
+  

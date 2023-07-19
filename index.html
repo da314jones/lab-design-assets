@@ -1,66 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY PORTFOLIO</title>
-  </head>
-  <body>
-    <header>
-      <h1>MY NAME</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Welcome</h2>
-        <article>
-          <h3>About me</h3>
-          <p>
-            My name is . I am a web developer located in . A little more about
-            me .
-          </p>
-          <p>I am passionate about .</p>
-          <p>A cool fact about me is .</p>
-          <button>Contact me!</button>
-        </article>
-      </section>
-      <section>
-        <h3>Projects</h3>
-        <article>
-          <ul>
-            <!-- TO DO LINK TO THE THREE LABS OR PROJECTS YOU ARE MOST PROUD OF SO FAR -->
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </article>
-      </section>
-    </main>
-    <aside>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="scripts.js"></script>
+  <title>MY PORTFOLIO</title>
+</head>
+
+<body>
+  <main class="parent">
+    <div class="div1">
+      <header>
+        
+      </header>
+    </div>
+    <div class="div2" id="about-me">
+      <img rel="icon" href="./assets/logo.jpeg" type="image/jpeg">
+      <h2>About me</h2>
+      <p>
+        I am a web developer located in TriState New York area. A little more about
+        me.
+      </p>
+      <p>I am passionate about creating new experiences for those who are new to the web experience.</p>
+      <p>A cool fact about me is I make stop animation shorts in my free time.</p>
+      <button>
+        <a href="dwaynejones@pursuit.org">Contact me!</a>
+      </button>
+
+
+      <h2>Projects</h2>
+      <article>
+        <ul>
+          <!-- TO DO LINK TO THE THREE LABS OR PROJECTS YOU ARE MOST PROUD OF SO FAR -->
+          <li><a href="https://da314jones.github.io/portfolio-app">Front-end Portfolio App</a></li>
+          <li><a href="https://da314jones.github.io/lab-app-planning/">Dads Chat</a></li>
+          <li><a href="https://da314jones.github.io/inventory-application/">Inventory Application</a></li>
+        </ul>
+      </article>
+    </div>
+    <div class="div3" id="work-experience">
       <h4>Work Experience</h4>
-      <!-- add whatever details you want here -->
+      <p>
+        I started my work career as a soldier right after high school. That
+        instilled discipline and a strong work ethic. Over the last 22 years, I
+        have worked in the construction industry as a contractor and a union
+        member of the air conditioning trades. I am a born leader, and I believe
+        my skills as a builder and a creative individual will allow me to build
+        your web development environment for you so you don't have to.
+      </p>
       <h4>School</h4>
-      <!-- add whatever details you want here -->
-    </aside>
-    <footer>
+      <p>
+        Skilled Trades (SheetMetal Mechanic) /Certified OSHA Safety Instructor &
+        Student at Pursuit FullStackWeb Development Fellow 12-month,
+        Google-funded software engineering fellowship with a 9% acceptance rate.
+      </p>
+    </div>
+
+    <footer class="div4">
       <ul>
         <li>
           <!-- TO DO UPDATE LINKS TO GO TO YOUR PROFILES/EMAIL -->
-          <a href="https://www.linkedin.com/"
-            ><img src="./assets/LinkedIn-Logos/LI-Logo.png" alt=""
-          /></a>
+          <a href="https://www.linkedin.com/in/dwayne-a-j-2772a6274/"><img src="./assets/LinkedIn-Logos/LI-Logo.png"
+              width="70px" /></a>
         </li>
         <li>
-          <a href="https://github.com"
-            ><img src="./assets/github-mark/github-mark.png" alt=""
-          /></a>
+          <a href="https://github.com/da314jones"><img src="./assets/github-mark/github-mark.png" width="20px" /></a>
         </li>
         <li>
-          <a href="mailto:YOUR@EMAIL.HERE"
-            ><img src="./assets/email-g8e9fd44a3_640.png" alt="Email me"
-          /></a>
+          <a href="mailto:dwaynejones@pursuit.org"><img class="envelope" src="./assets/email-g8e9fd44a3_640.png"
+              width="30px" alt="Email me" /></a>
         </li>
       </ul>
     </footer>
-  </body>
+  </main>
+</body>
+
 </html>
